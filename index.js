@@ -1,4 +1,5 @@
 import Cat from "./Cat.js"
+import Car from "./Car.js"
 
 function returnName (firstName, lastName){
     return `${firstName} ${lastName}`;
@@ -33,5 +34,15 @@ const cat1 = new Cat ('Kitty', 'blue', 'Siamese')
 cat1.getCatInfo();
 cat1.changeName("Tom");
 cat1.getCatInfo();
+
+const car1 = new Car('Toyota', 'Yaris', 2021)
+console.log(car1.getCarInfo());
+console.log(car1.start());
+console.log(car1.stop());
+
+const car2 = new Car('Hyundi', 'i20', 2020)
+console.log(car2.getCarInfo());
+console.log(car2.start());
+console.log(car2.stop());
 
 
